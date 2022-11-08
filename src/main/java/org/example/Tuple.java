@@ -17,11 +17,11 @@ public class Tuple<T, K> {
 
     public void setItem2(K item2) { this.item2 = item2; }
 
-    public static Tuple of(Object item1, Object item2) {
+    public static<T, K> Tuple of(T item1, K item2) {
         return new Tuple(item1, item2);
     }
 
-    public static Tuple of(Object item) {
+    public static<T> Tuple of(T item) {
         return new Tuple(item, null);
     }
 
